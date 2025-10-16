@@ -1,0 +1,29 @@
+batch_size: 1
+model_name: cmt
+max_epochs: 1
+warmup_batchs: 1
+max_lr: 0.00004
+num_classes: 10
+num_workers: 1
+pretrained: ~
+optimizer: AdamW
+wdecay: 0.01
+use_amp: True
+use_fpn: False
+fpn_size: 1536
+use_selection: False
+num_selects:
+  layer1: 256
+  layer2: 128
+  layer3: 64
+  layer4: 32
+use_combiner: False
+lambda_b: 0.5
+lambda_s: 0.0
+lambda_n: 5.0
+lambda_c: 1.0
+update_freq: 2
+log_freq: 50
+eval_freq: 10
+label_smoothing: 0.0
+
